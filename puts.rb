@@ -25,3 +25,13 @@ price = 1980
 price2 = 5900
 
 puts price + price2
+
+params = { name: "ai", mail: "hoge@hoge", address: "okinawa"}
+
+if params["name"]
+  puts "nameのデータがあります"
+else
+  puts "nameのデータがありません"
+end
+
+puts params[:name]
