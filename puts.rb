@@ -26,6 +26,18 @@ price2 = 5900
 
 puts price + price2
 
+num = 5
+
+if num > 10
+  puts "10より大きいです"
+elsif num >= 5
+  puts "5以上です"
+elsif num >= 3
+  puts "3以上です"
+end
+
+puts "5以上です" if num >= 5
+
 # 配列定義
 users = ["tanaka", "satou", "suzuki", "yamada"]
 
@@ -48,3 +60,4 @@ end
 puts "-------------------------------"
 
 puts users.join("と、")
+
