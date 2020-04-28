@@ -26,7 +26,18 @@ price2 = 5900
 
 puts price + price2
 
-<<<<<<< HEAD
+
+params = { name: "ai", mail: "hoge@hoge", address: "okinawa"}
+
+if params["name"]
+  puts "nameのデータがあります"
+else
+  puts "nameのデータがありません"
+end
+
+puts params[:name]
+
+
 users = ["satou", "tanaka", "yamada", "suzuki", "yanagi", "obata"]
 
 # !付けないと元データに反映されない。
@@ -54,7 +65,6 @@ team_b.each do |user|
 end
 
 puts text
-=======
 num = 5
 
 if num > 10
@@ -90,4 +100,3 @@ puts "-------------------------------"
 
 puts users.join("と、")
 
->>>>>>> master
