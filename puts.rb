@@ -26,6 +26,7 @@ price2 = 5900
 
 puts price + price2
 
+<<<<<<< HEAD
 users = ["satou", "tanaka", "yamada", "suzuki", "yanagi", "obata"]
 
 # !付けないと元データに反映されない。
@@ -53,3 +54,40 @@ team_b.each do |user|
 end
 
 puts text
+=======
+num = 5
+
+if num > 10
+  puts "10より大きいです"
+elsif num >= 5
+  puts "5以上です"
+elsif num >= 3
+  puts "3以上です"
+end
+
+puts "5以上です" if num >= 5
+
+# 配列定義
+users = ["tanaka", "satou", "suzuki", "yamada"]
+
+puts users[2]
+
+users.each do |user|
+  puts "#{user}さん"
+end
+
+puts "-------------------------------"
+
+users.each { |user| puts "#{user}さん"}
+
+puts "-------------------------------"
+
+users.each.with_index(1) do |user, i|
+  puts "会員No.#{i} #{user}さん"
+end
+
+puts "-------------------------------"
+
+puts users.join("と、")
+
+>>>>>>> master
